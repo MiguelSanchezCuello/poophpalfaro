@@ -1,5 +1,12 @@
 <?php
     class Saiyajin{
+        # Esta clase se puede simplificar definiendo los atributos dentro de los parametros del constructor
+        /*
+         *  Por ejemplo
+         *  public function __construct(public string $nombre, public int $nivel_pelea){ }
+         *  se borra dentro del constructor y los atributos definidos previamente y funciona igual.
+         *  PHP 8 en adelante, se encarga de mapear correctamente los atributos.
+         */
         public string $nombre;
         public int $nivel_pelea;
 
