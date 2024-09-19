@@ -9,4 +9,10 @@
     # No es una practica comun.
 
     echo $goku->Saludar().'<br />';
-    echo $vegeta->Saludar("El principe de los saiyayins, yo soy ");
+    echo $vegeta->Saludar("El principe de los saiyayins, yo soy ").'<br /><br />';
+
+    $gohan = new SuperSaiyajin("Gohan", 2000);
+
+    echo $gohan->Saludar().'<br />';
+    echo $gohan->NivelDePelea().'<br />';
+    echo $gohan->Transformacion().'<br />';
