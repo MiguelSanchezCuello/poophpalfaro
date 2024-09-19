@@ -1,10 +1,15 @@
 <?php
     class Saiyajin{
-        public string $nombre = "Goku";
-        public int $nivel_pelea = 1000;
+        public string $nombre;
+        public int $nivel_pelea;
 
-        public function Saludar():string{
-            return "Hola soy ".$this->nombre;
+        public function __construct($nombre, $nivel_pelea){
+            $this->nombre = $nombre;
+            $this->nivel_pelea = $nivel_pelea;
+        }
+
+        public function Saludar($saludo = "Hola soy "):string{
+            return $saludo.$this->nombre;
         }
 
         public function NivelDePelea(){
@@ -12,10 +17,3 @@
         }
     }
 
-    $goku = new Saiyajin();
-
-    echo $goku->nombre."<br />";
-    echo $goku->NivelDePelea()."<br />";
-
-    $vegeta = new Saiyajin();
-    var_dump($vegeta);
