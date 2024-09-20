@@ -1,5 +1,5 @@
 <?php
-    require_once "saiyajin.php";
+    require_once "supersaiyajin.php";
 
     $goku = new saiyajin("Goku", 1000);
     $vegeta = new saiyajin("Vegeta",  nivel_pelea: 950);
