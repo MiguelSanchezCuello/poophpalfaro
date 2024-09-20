@@ -2,10 +2,16 @@
     require_once "saiyajin.php";
 
     class SuperSaiyajin extends Saiyajin{
-        public function Transformacion(){
-            return "$this->nombre se ha convertido en un ".$this->clase =
-                    $this->nivel_pelea > 1500 ?
-                        $this->clase = "SuperSaiyajin" :
-                        $this->clase = "Saiyajin";
+
+
+
+        public function NivelDePelea(){
+            return "$this->nombre Tiene un nivel de pelea de $this->nivel_pelea";
+        }
+
+        public function Transformacion()
+        {
+            echo "<br/>Elevando nivel de pelea AAAAAAAAHHHH!!!!!!.<br />";
+            return parent::Transformacion();
         }
     }

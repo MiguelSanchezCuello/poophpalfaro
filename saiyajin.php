@@ -28,6 +28,18 @@
         {
             return $this->clase;
         }
+
+        public function Transformacion(){
+            if($this->nivel_pelea > 1500){
+                $this->nivel_pelea *= 2;
+                $this->clase = "SuperSaiyajin";
+
+                return "$this->nombre se ha transformado en un $this->clase";
+            }
+
+            return "$this->nombre aun no se ha transformado";
+
+        }
     }
 
 
