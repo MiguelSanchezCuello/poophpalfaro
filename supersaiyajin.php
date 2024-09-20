@@ -6,7 +6,7 @@
 
 
         public function NivelDePelea(){
-            return "$this->nombre Tiene un nivel de pelea de $this->nivel_pelea";
+            return $this->getNombre()." Tiene un nivel de pelea de $this->nivel_pelea";
         }
 
         public function Transformacion()

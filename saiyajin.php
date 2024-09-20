@@ -7,9 +7,17 @@
          *  se borra dentro del constructor y los atributos definidos previamente y funciona igual.
          *  PHP 8 en adelante, se encarga de mapear correctamente los atributos.
          */
-        public string $nombre;
+        private string $nombre;
         public int $nivel_pelea;
         public string $clase = "Saiyajin";
+
+        public function getNombre(): string{
+            return $this->nombre;
+        }
+
+        public function setNombre(string $nombre): void{
+            $this->nombre = $nombre;
+        }
 
         public function __construct($nombre, $nivel_pelea){
             $this->nombre = $nombre;
