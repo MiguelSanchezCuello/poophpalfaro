@@ -18,9 +18,11 @@
     echo $gohan->NivelDePelea().'<br />';
     echo $gohan->Transformacion().'<br />';
     echo $gohan->NivelDePelea().'<br />';
+    echo $gohan->MostrarColorCabello().'<br />';
 
     echo "<br />";
     $krilin = new saiyajin("Krilin", 600);
     echo $krilin->Saludar().'<br />';
     $krilin->setNombre("Calvo");
     echo $krilin->Saludar().'<br />';
+    echo Saiyajin::MostrarColorCabello();

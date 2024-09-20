@@ -11,6 +11,14 @@
         public int $nivel_pelea;
         public string $clase = "Saiyajin";
 
+        public static string $cabello = "Negro";
+
+        # No se puede acceder a una propiedad estatica desde una instancia pero si a los metodos.
+        # Un metodo estatico solo puede acceder a atributos estaticos, usando self::$atributo, no a los normales.
+        public static function MostrarColorCabello(){
+            return "Tengo el cabello de color ".self::$cabello;
+        }
+
         public function getNombre(): string{
             return $this->nombre;
         }
